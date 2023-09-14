@@ -12,7 +12,7 @@ class SeoSeeder extends Seeder
      */
     public function run(): void
     {
-        Seo::create([
+        Seo::updateOrCreate([
             'id' => 1,
             'title' => [
                 'en' => 'Tabeeb Gara7',

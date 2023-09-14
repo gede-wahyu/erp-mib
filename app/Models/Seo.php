@@ -9,7 +9,7 @@ use Spatie\Translatable\HasTranslations;
 class Seo extends Model
 {
     use HasFactory, HasTranslations;
-    
+    protected $table='seos';
     protected $guarded = [];
 
     public $translatable = ['title', 'description'];
